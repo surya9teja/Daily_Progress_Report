@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="40dp"
+                android:gravity="center"
+                android:text="DPR"
+                android:textColor="#000000"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2">
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TableRow>
+                    <TextView
+                        android:id="@+id/in_project_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:text="Project Name"
+                        android:textSize="25dp"
+                        android:layout_column="0"
+                        android:textColor="#000000"/>
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_column="1"/>
+                </TableRow>
+                <TableRow>
+                    <Button
+                        android:id="@+id/date"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Date"
+                        android:textColor="#0C0C0C" />
+
+                    <EditText
+                        android:id="@+id/in_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textColor="#0C0C0C"
+                        android:inputType="date"
+                        android:text="Date"
+                        android:textSize="18dp" />
+
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:id="@+id/project_manager"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:text="Project Manager"
+                        android:textSize="25dp"
+                        android:layout_column="0"
+                        android:textColor="#000000"/>
+                    <EditText
+                        android:id="@+id/in_project_manager"
+                        android:layout_width="200dp"
+                        android:layout_height="match_parent"
+                        android:text=""
+                        android:textSize="18dp"
+                        android:layout_column="1"/>
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:id="@+id/site_engineer"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:text="Site Engineer"
+                        android:textSize="25dp"
+                        android:layout_column="0"
+                        android:textColor="#000000"/>
+                    <EditText
+                        android:id="@+id/in_site_engineer"
+                        android:layout_width="200dp"
+                        android:layout_height="match_parent"
+                        android:text=""
+                        android:textSize="18dp"
+                        android:layout_column="1"/>
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:id="@+id/channel_partner"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:text="Channel Partner"
+                        android:textSize="25dp"
+                        android:layout_column="0"
+                        android:textColor="#000000"/>
+                    <EditText
+                        android:id="@+id/in_channel_partner"
+                        android:layout_width="200dp"
+                        android:layout_height="match_parent"
+                        android:text=""
+                        android:textSize="18dp"
+                        android:layout_column="1"/>
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:id="@+id/line_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:text="Line Name"
+                        android:textSize="25dp"
+                        android:layout_column="0"
+                        android:textColor="#000000"/>
+                    <EditText
+                        android:id="@+id/in_line_name"
+                        android:layout_width="200dp"
+                        android:layout_height="match_parent"
+                        android:text=""
+                        android:textSize="18dp"
+                        android:layout_column="1"/>
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:id="@+id/line_length"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:text="Line Length"
+                        android:textSize="25dp"
+                        android:layout_column="0"
+                        android:textColor="#000000"/>
+                    <EditText
+                        android:id="@+id/in_line_length"
+                        android:layout_width="200dp"
+                        android:layout_height="match_parent"
+                        android:text=""
+                        android:ems="10"
+                        android:inputType="numberDecimal"
+                        android:textSize="18dp"
+                        android:layout_column="1"/>
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:id="@+id/route_length"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:text="Route Length"
+                        android:textSize="25dp"
+                        android:layout_column="0"
+                        android:textColor="#000000"/>
+                    <EditText
+                        android:id="@+id/in_route_length"
+                        android:layout_width="200dp"
+                        android:layout_height="match_parent"
+                        android:text=""
+                        android:ems="10"
+                        android:inputType="numberDecimal"
+                        android:textSize="18dp"
+                        android:layout_column="1"/>
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:id="@+id/drum_number"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:text="Drum Number"
+                        android:textSize="25dp"
+                        android:layout_column="0"
+                        android:textColor="#000000"/>
+                    <EditText
+                        android:id="@+id/in_drum_number"
+                        android:layout_width="200dp"
+                        android:layout_height="match_parent"
+                        android:text=""
+                        android:ems="10"
+                        android:inputType="numberDecimal"
+                        android:textSize="18dp"
+                        android:layout_column="1"/>
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:id="@+id/location_number"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:text="Location Number"
+                        android:textSize="25dp"
+                        android:layout_column="0"
+                        android:textColor="#000000"/>
+                    <EditText
+                        android:id="@+id/in_location_number"
+                        android:layout_width="200dp"
+                        android:layout_height="match_parent"
+                        android:text=""
+                        android:textSize="18dp"
+                        android:layout_column="1"/>
+                </TableRow>
+                <TableRow>
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="PTW issue Time"
+                        android:id="@+id/ptw_issue_time"/>
+                    <EditText
+                        android:id="@+id/in_ptw_issue_time"
+                        android:inputType="time"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textColor="#0C0C0C"
+                        android:text="PTW Issue Time"
+                        android:textSize="18dp" />
+                </TableRow>
+                <TableRow>
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="PTW return Time"
+                        android:id="@+id/ptw_return_time"/>
+                    <EditText
+                        android:id="@+id/in_ptw_return_time"
+                        android:inputType="time"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textColor="#0C0C0C"
+                        android:text="PTW Return Time"
+                        android:textSize="18dp" />
+                </TableRow>
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/today_work"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_column="0"
+                        android:layout_marginTop="50dp"
+                        android:text="Work Done Today"
+                        android:textColor="#000000"
+                        android:textSize="25dp" />
+                    <EditText
+                        android:id="@+id/in_today_work"
+                        android:layout_width="200dp"
+                        android:layout_height="150dp"
+                        android:text=""
+                        android:textSize="18dp"
+                        android:layout_column="1"/>
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:id="@+id/plan_tomorrow"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_column="0"
+                        android:layout_marginTop="50dp"
+                        android:text="Plans for Tomorrow"
+                        android:textColor="#000000"
+                        android:textSize="25dp" />
+                    <EditText
+                        android:id="@+id/in_plan_tomorrow"
+                        android:layout_width="200dp"
+                        android:layout_height="150dp"
+                        android:text=""
+                        android:textSize="18dp"
+                        android:layout_column="1"/>
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:id="@+id/ehs"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_column="0"
+                        android:layout_marginTop="50dp"
+                        android:text="EHS Observation"
+                        android:textColor="#000000"
+                        android:textSize="25dp" />
+                    <EditText
+                        android:id="@+id/in_ehs"
+                        android:layout_width="200dp"
+                        android:layout_height="150dp"
+                        android:text=""
+                        android:textSize="18dp"
+                        android:layout_column="1"/>
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:id="@+id/remarks"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_column="0"
+                        android:layout_marginTop="50dp"
+                        android:text="EHS Observation"
+                        android:textColor="#000000"
+                        android:textSize="25dp" />
+                    <EditText
+                        android:id="@+id/in_remarks"
+                        android:layout_width="200dp"
+                        android:layout_height="150dp"
+                        android:text=""
+                        android:textSize="18dp"
+                        android:layout_column="1"/>
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
